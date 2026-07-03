@@ -57,7 +57,7 @@ const CartPage = () => {
                   <Link to={`/product/${item._id}`}>
                     <div style={{ width: 80, height: 80, background: '#F7F6F2', borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, overflow: 'hidden' }}>
                       <img src={item.image} alt={item.name} style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply', padding: 8 }}
-                        onError={(e) => { e.target.src = 'https:
+  onError={(e) => { e.target.onerror = null; e.target.src = 'https://via.placeholder.com/80?text=No+Image'; }} />
                     </div>
                   </Link>
 
